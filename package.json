@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/vitorcastilho/video-maker/issues"
   },
-  "homepage": "https://github.com/vitorcastilho/video-maker#readme"
+  "homepage": "https://github.com/vitorcastilho/video-maker#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
