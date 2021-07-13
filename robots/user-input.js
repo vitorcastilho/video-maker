@@ -1,17 +1,7 @@
-const readline = require('readline-sync')
-const robots = {
-    // userInput: require('./robots/user-input.js'),
-    text: require("./robots/text.js")
-}
 
-async function start() {
-    const content = {}
-
+function userInput(content) {
     content.searchTerm = askAndReturnSearchTerm()
     content.prefix = askAndReturnPrefix()
-
-    // robots.userInput(content)
-    await robots.text(content)
 
     function askAndReturnSearchTerm() {
         return readline.question('Type a Wikipedia search term:')
@@ -24,8 +14,6 @@ async function start() {
 
         return selectedPrefixText
     }
-
-    console.log(content)
 }
 
-start()
+module.exports = userInput
